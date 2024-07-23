@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root {
+  --primary-color: rgb(84, 154, 170);
+  --primary-color-darker: rgb(83, 168, 224);
+  --bg-result: rgb(109, 255, 182);
+  --bg-warning: rgb(255, 130, 57);
+  --bg-bad: rgb(255, 94, 94);
+  --bg-invalid: rgb(134, 134, 134);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open sans', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+.container {
+  max-width: 50vw;
+  overflow: hidden;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 20px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  border: 4px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+.paragrafo-resultado, .warning, .bad, .invalid {
+  background: var(--bg-result);
+  padding: 10px 20px;
+  font-weight: bold;
+}
+.warning {
+  background: var(--bg-warning);
+}
+.bad {
+  background: var(--bg-bad);
+}
+.invalid {
+  background: var(--bg-invalid);
+}
